@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+
+    <style>
+    div {
+        font-family:Broadway;
+        font-size: 35px;
+        margin: 20px;
+        background-color: lightgray;
+        color: dimgray;
+        text-align: center;
+
+    }
+
+    form {
+        font-family:Broadway;
+        font-size: 16px;
+        margin: 20px;
+        background-color: lightgray;
+        color: dimgray;
+    }
+
+    
+
+    input[type=button]:hover {
+        background-color: gray;
+    }
+    
+    h1 {
+        font-family:Broadway;
+        font-size: 24px;
+        margin: 20px;
+        color: dimgray;
+    }
+
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: dimgray;
+        overflow: hidden;
+    }       
+
+    a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family:Broadway;
+        font-size: 16px;
+    }
+
+    nav ul a:hover {
+        background-color: gray;
+    }
+
+    select {
+        font-family:Broadway;
+        font-size: 16px;
+        margin: 20px;
+        background-color: lightgray;
+        color: dimgray;
+    }
+
+
+
+</style>
+
+
+
+
+
+
+</head>
+<body>
+    
+      <nav>
+        <ul>   
+            <a href="">Home</a> |
+            <a href="">Grade Calculator</a> |
+            <a href="">Clubs Information</a> |
+        </ul>
+    </nav>
+    
+    
+    <h1>School Club Information</h1>
+
+    <form>
+
+        <label>Select a Club:</label>
+        <select id="dropdown">
+            <option value="">-- Choose a Club --</option>
+            <option value="Science Club" id="science">Science Club</option>
+            <option value="Math Club" id="math">Math Club</option>
+            <option value="Basketball Club" id="ball">Basketball Club</option>
+        </select>
+
+    <br><br>
+    <input type="button" value="Show" py-click="display_club_info"><br><br>
+
+    </form>
+
+    <div id="output"></div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
